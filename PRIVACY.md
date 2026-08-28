@@ -1,12 +1,12 @@
 # Tethered Home Privacy Policy
 
-Last updated 27 August 2026
+Last updated 28 August 2026
 
 Tethered Home is designed to keep household information under the control of the people using the app
 
 ## Information you choose to add
 
-The app can store household names, member and pet profiles, optional profile pictures, shopping items, meals, routines, household jobs, care appointments, car reminders, deliveries, wellbeing progress and awards
+The app can store household names, member and pet profiles, optional profile pictures, shopping items, meals, routines, household jobs, care appointments, car reminders, deliveries, wellbeing routines, progress and awards
 
 This information is stored on the device and, when iCloud sharing is used, in the household owner’s private CloudKit database and the invited household share
 
@@ -27,21 +27,21 @@ Access can be declined or changed in Apple Settings
 
 Only people invited through the household’s iCloud share can access shared household records
 
-Personal Health data is not copied into the household share
+Information read from or written to Apple Health is not copied into the household share
+
+Hydration entries and hydration targets stay on the device and are not included in household CloudKit sync
 
 Profile pictures are cropped and compressed on the device before being stored with household data
 
 ## On-device intelligence
 
-Where supported, Tethered Home uses Apple Foundation Models on the device for optional positive reflections, goal guidance and recipe calorie estimates
+Where supported, Tethered Home uses Apple Foundation Models on the device for optional positive reflections, goal guidance and meal inspiration
 
 Tethered Home does not send these prompts to a developer-operated AI server and Bark & Tide does not receive a compute bill for their use
 
-## External services and links
+## External links
 
-Optional recipe inspiration is requested from TheMealDB without sending household, Health or Apple Music data
-
-Opening recipe, supermarket, takeaway, NHS or other external links is governed by the destination provider’s privacy policy
+Opening supermarket, takeaway, NHS or other external links is governed by the destination provider’s privacy policy
 
 ## Purchases
 
