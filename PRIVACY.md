@@ -1,6 +1,6 @@
 # Tethered Home Privacy Policy
 
-Last updated 28 August 2026
+Last updated 27 August 2026
 
 Tethered Home is designed to keep household information under the control of the people using the app
 
@@ -63,4 +63,4 @@ Deleting the app does not automatically remove records retained in iCloud or an 
 
 ## Contact
 
-For privacy questions or support, email barkandtide@outlook.com
+For privacy questions or support, email byteandtide@outlook.com
