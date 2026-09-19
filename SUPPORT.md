@@ -18,13 +18,13 @@ The invited person accepts the Apple invitation and opens Tethered Home using th
 
 Their profile is added to the household after the shared household is accepted
 
-The household owner purchases Tethered Home and invites other members through the app’s iCloud household share. A member who accepts that invitation receives access through the household and does not need a separate subscription or Apple Family Sharing membership
+The household owner can invite other members through the app’s iCloud household share. The invitation grants access to shared household data but does not replace a purchase. Paid app access requires a verified StoreKit entitlement, including an eligible Apple Family Sharing entitlement when Family Sharing is enabled for the subscription
 
 ## Permissions
 
 Calendar and Reminders access lets Tethered Home read relevant plans and reminders and write events when you ask it to
 
-Health access is optional and is used for selected wellness, hydration and activity records
+Health access is optional. iPhone can save the amount of water the user explicitly logs. Eligible fitness workouts are recorded only when deliberately started and timed on Apple Watch; an authorised outdoor dog walk can also save its route in Apple Health
 
 Apple Music access is optional and is used for music rediscovery and playback controls
 
@@ -42,11 +42,13 @@ Confirm both devices use the same Apple account or that the invited person has a
 
 ## Wellbeing
 
-Wellbeing is personal by default and is not sent as a family notification
+Wellbeing and fitness progress remain personal and are not included in household CloudKit sync or sent as family notifications
 
 Eligible Watch activities can record a HealthKit workout when permission is available
 
 Completed wellbeing moments can contribute to personal points, family points, streaks and positive awards
+
+Live walk sharing is off by default and requires both a master opt-in and a separate choice for each walk. Stop Sharing is available without stopping the workout. A stale location stops displaying after three minutes and is cleared when an app next detects that it has expired
 
 The on-device AI coach is optional and does not send prompts to a server
 
