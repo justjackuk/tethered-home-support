@@ -1,12 +1,12 @@
 # Tethered Home Privacy Policy
 
-Last updated 19 September 2026
+Last updated 20 September 2026
 
 Tethered Home is designed to keep household information under the control of the people using the app
 
 ## Information you choose to add
 
-The app can store household names, member and pet profiles, optional profile pictures, shopping items, meals, household routines, jobs, care appointments, car reminders and deliveries. Personal goals, wellbeing routines, fitness progress, hydration progress and awards remain on the person’s device
+The app can store household names, member and pet profiles, optional profile pictures, cars, shopping items, meals, household routines, jobs, school items and project progress, care appointments, car reminders, household notes and deliveries. Personal goals, wellbeing routines, fitness progress, hydration progress and awards remain on the person’s device. School-project milestone points are shared with the household so the child’s progress appears consistently to household members
 
 This information is stored on the device and, when iCloud sharing is used, in the household owner’s private CloudKit database and the invited household share
 
@@ -19,8 +19,11 @@ Tethered Home requests access only when a feature needs it
 - Location access supports local animal-walk weather checks, optional dog-walk route recording and optional live walk sharing
 - Apple Music access supports authorised music suggestions and playback
 - Notifications provide selected household and routine reminders
-- Photos access is limited to pictures the user selects for household profiles
+- Camera access is used only when the user chooses to photograph ingredients for on-device meal recognition
+- Photos access is limited to pictures the user selects for household profiles or a local walk memory
 - iCloud and CloudKit provide private sync and invited household sharing
+- Widgets display a limited household summary from the app’s shared on-device container
+- Live Activities display the status of a workout the user has deliberately started on Apple Watch
 
 Access can be declined or changed in Apple Settings
 
@@ -38,7 +41,7 @@ Names and photos attached to completed dog walks remain in local app storage on 
 
 Hydration entries and hydration targets stay on the device and are not included in household CloudKit sync. Checking off a fitness item on iPhone does not create a workout; workouts are recorded only after the user deliberately starts and times an eligible activity on Apple Watch
 
-Profile pictures are cropped and compressed on the device before being stored with household data
+Profile pictures are cropped and compressed on the device before being stored with household data. Other selected photos, including dog-walk memory photos and ingredient photos, remain local unless the user explicitly exports them with the system share sheet
 
 ## On-device intelligence
 
@@ -64,11 +67,11 @@ Tethered Home does not use third-party advertising, cross-app tracking or develo
 
 ## Retention and control
 
-Users can stop live walk sharing at any time, remove local app data or leave a shared household from Settings
+Users can stop live walk sharing at any time, remove local app data, leave a shared household or ask the household owner to revoke their access from Settings
 
 The household owner controls the shared CloudKit record and invited participants through iCloud sharing
 
-Deleting the app does not automatically remove records retained in iCloud or an active Apple subscription
+Reset This Device removes local Tethered Home information and private document copies from that device. Delete All Tethered Home Data clears the shared household payload and local Tethered Home data when the reset reaches participating devices. Original files imported from elsewhere are not deleted. Deleting the app does not automatically remove records retained in iCloud or cancel an active Apple subscription
 
 ## Contact
 
