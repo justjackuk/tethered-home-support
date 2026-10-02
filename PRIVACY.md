@@ -10,6 +10,16 @@ The app can store household names, member and pet profiles, optional profile pic
 
 This information is stored on the device and, when iCloud sharing is used, in the household owner’s private CloudKit database and the invited household share
 
+## Optional profile details, cleaning and budgeting
+
+Display names and opted-in birthdays can be included in the private household share. Birth year is optional. Dietary preferences and food allergies are shared only when the separate sharing control is enabled. Details not enabled for sharing remain in local app storage; disabling sharing removes those fields from the shared copy when devices next synchronise. Previously saved independent copies cannot be recalled. Household roles shown in a profile do not change invitation, access-revocation or leaving controls.
+
+Custom room names, cleaning schedules and completion records are shared with accepted household members. Completion contributes to the existing household points, history and reward goals. Reminder and gentle-display preferences remain personal to the device.
+
+Home budget entries, income, expenses, savings allocations and currency remain in local app storage and are not included in the household CloudKit share or shown on the TV. The feature does not connect to bank accounts, initiate payments or store bank login details. Optional budget explanations use an on-device language model where available; no external AI provider receives budget prompts. Calculations are performed by the app, not the language model, and generated explanations do not change saved amounts. It is a planning feature, not professional financial advice.
+
+Life admin subscription records, including recorded costs, billing frequencies and recorded cancellation status, are household-shared like other Life admin information. Linking one to a budget creates a private on-device budget entry; it does not make the original Life admin record private. Cancelling a record in Tethered Home never cancels a subscription with its provider.
+
 ## Apple services
 
 Tethered Home requests access only when a feature needs it
@@ -49,7 +59,7 @@ Photos can be changed or removed in My profile or household setup. Removal is sy
 
 ## On-device intelligence
 
-Where supported, Tethered Home uses Apple Foundation Models on the device for optional positive reflections, goal guidance and meal inspiration
+Where supported, Tethered Home uses Apple Foundation Models on the device for optional positive reflections, goal guidance, meal inspiration and household budget explanations
 
 Tethered Home does not send these prompts to a developer-operated AI server and Bark & Tide does not receive a compute bill for their use
 
@@ -63,7 +73,7 @@ Subscriptions and introductory offers are processed by Apple through StoreKit
 
 Tethered Home does not receive or store payment-card details
 
-An iCloud household invitation shares household data but does not itself unlock paid access. Each person must have a verified StoreKit entitlement, including an eligible entitlement supplied through Apple Family Sharing when enabled for the subscription
+An accepted iCloud household invitation provides access through the shared household while that membership remains valid. This access is separate from purchasing or sharing an Apple subscription and does not create a subscription in the invited person's Apple Account. Leaving the household or confirmed revocation removes household access. Apple Family Sharing, where enabled, is a separate way to share a verified StoreKit subscription entitlement.
 
 ## Tracking and advertising
 
