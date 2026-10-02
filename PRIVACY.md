@@ -16,7 +16,9 @@ Display names and opted-in birthdays can be included in the private household sh
 
 Local-only health correction (in preparation, not yet released): the corrected app excludes food-allergy details and human care appointments, including medication support and medical appointments, from household CloudKit uploads. These entries remain in local app storage; assigning a responsible adult does not send that person a care reminder. Pet care remains household-shared. This describes the corrected candidate, not a guarantee that previously installed versions behave this way.
 
-Earlier versions could include opted-in food allergies and human care appointments in household iCloud records. The correction does not silently delete those records: if legacy health information is detected, household uploads are paused and a status message explains why. Existing cloud records are preserved, and an additive local preservation copy is retained on iPhone. Previously saved independent copies cannot be recalled. Legacy health data can therefore remain in iCloud until a separately authorised remediation is completed; this is an unresolved release gate. App Privacy continues to declare Health while legacy cloud storage remains possible. Local app storage is distinct from Apple system device backups; exclusion of health information from those backups is still under verification.
+Earlier versions could include opted-in food allergies and human care appointments in household iCloud records. The correction does not silently delete those records: if legacy health information is detected, household uploads are paused and a status message explains why. An owner-only migration requires explicit confirmation for the identified household. It verifies a new local preservation copy before removing only those health fields from that existing household record. A changed account, record or concurrent edit prevents the migration proceeding. Ordinary household information and membership are retained. All household devices must use the corrected app, because an older version could upload those fields again.
+
+Legacy health information remains in iCloud until that household's confirmed migration completes successfully; this is still a release gate under verification. App Privacy continues to declare Health while legacy cloud storage remains possible. The corrected candidate marks local preferences, the shared on-device preferences container, private health preservation files and local dog-walk photos as excluded from device backup. This also excludes ordinary preferences stored alongside health information. Apple's backup-exclusion setting cannot recall existing backups or guarantee the contents of independently retained copies. No existing backups are deleted by this correction.
 
 Custom room names, cleaning schedules and completion records are shared with accepted household members. Completion contributes to the existing household points, history and reward goals. Reminder and gentle-display preferences remain personal to the device.
 
@@ -45,7 +47,15 @@ Access can be declined or changed in Apple Settings
 
 Only people invited through the household’s iCloud share can access shared household records
 
-Health records, workout history, complete workout routes, personal goals, wellbeing routines, personal fitness progress, streaks and awards are not copied into iCloud or the household share
+In the corrected candidate, health records, workout history, complete workout routes, personal goals, wellbeing routines, personal fitness progress, streaks and awards are not copied into the household CloudKit share. The legacy-version exception and migration above still apply.
+
+## Fridge-note safety in the corrected candidate
+
+New fridge notes and replies include the signed-in iCloud account's record identifier as well as the displayed author name, so changing a displayed name does not evade a block. These identifiers are used for household functionality, not tracking or advertising. Display names selected on a shared TV do not represent separate authenticated accounts.
+
+Blocking hides that author's notes, replies, previews and alerts on the device where the block is applied. Block lists stay on that device; blocking does not revoke household access or delete shared messages. Older messages without an account identifier use the displayed name. Owners can separately revoke household access using the existing sharing controls.
+
+Safety reports contain the reported note identifier, reporter account identifier, author identifier, timestamp, reason and review status. They are included in the private household share for the owner's review. The report does not duplicate the message text or send it automatically to a developer-operated service. A limited on-device phrase filter rejects some threatening or abusive text; it is not a guarantee that all objectionable content will be detected. Contact the support address below for concerns needing developer attention. Delivery and the complete moderation workflow remain under verification before release.
 
 Live walk location sharing is off by default. A user must first enable the master control and then separately choose to share each individual walk. While sharing is active, Tethered Home displays a persistent warning and provides an immediate Stop Sharing control on Apple Watch and iPhone
 
