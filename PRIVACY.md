@@ -12,7 +12,11 @@ This information is stored on the device and, when iCloud sharing is used, in th
 
 ## Optional profile details, cleaning and budgeting
 
-Display names and opted-in birthdays can be included in the private household share. Birth year is optional. Dietary preferences and food allergies are shared only when the separate sharing control is enabled. Details not enabled for sharing remain in local app storage; disabling sharing removes those fields from the shared copy when devices next synchronise. Previously saved independent copies cannot be recalled. Household roles shown in a profile do not change invitation, access-revocation or leaving controls.
+Display names and opted-in birthdays can be included in the private household share. Birth year is optional. Ordinary dietary preferences can be shared separately; medical information should not be entered in shared preference fields. Household roles shown in a profile do not change invitation, access-revocation or leaving controls.
+
+Local-only health correction (in preparation, not yet released): the corrected app excludes food-allergy details and human care appointments, including medication support and medical appointments, from household CloudKit uploads. These entries remain in local app storage; assigning a responsible adult does not send that person a care reminder. Pet care remains household-shared. This describes the corrected candidate, not a guarantee that previously installed versions behave this way.
+
+Earlier versions could include opted-in food allergies and human care appointments in household iCloud records. The correction does not silently delete those records: if legacy health information is detected, household uploads are paused and a status message explains why. Existing cloud records are preserved, and an additive local preservation copy is retained on iPhone. Previously saved independent copies cannot be recalled. Legacy health data can therefore remain in iCloud until a separately authorised remediation is completed; this is an unresolved release gate. App Privacy continues to declare Health while legacy cloud storage remains possible. Local app storage is distinct from Apple system device backups; exclusion of health information from those backups is still under verification.
 
 Custom room names, cleaning schedules and completion records are shared with accepted household members. Completion contributes to the existing household points, history and reward goals. Reminder and gentle-display preferences remain personal to the device.
 
