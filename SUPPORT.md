@@ -18,7 +18,19 @@ The invited person accepts the Apple invitation and opens Tethered Home using th
 
 Their profile is added to the household after the shared household is accepted
 
-The household owner can invite other members through the app’s iCloud household share. The invitation grants access to shared household data but does not replace a purchase. Paid app access requires a verified StoreKit entitlement, including an eligible Apple Family Sharing entitlement when Family Sharing is enabled for the subscription
+An accepted household invitation provides shared-household access while membership remains valid. It does not create an Apple subscription for the invited person. Apple subscription Family Sharing is separate; Restore Purchases checks applicable StoreKit entitlements.
+
+## Version 2.0.5 — pending public release
+
+The candidate adds Shopping, Home, Together, Chat and Calendar navigation. Choose your opening destination in Settings. Availability in an installed older version differs.
+
+Together opens the household map. Each person must enable their own location sharing and grant the permissions they choose. Pause or stop sharing in Together. Stale or unavailable information is not a live safety guarantee. Motion and background updates depend on system permissions; do not use this as an emergency service.
+
+Chat requires accepted household access and encrypted-device setup. Set up the first device only for a genuinely new Chat household. Subsequent devices require approval through an existing trusted device. Refresh or retry an access failure; do not reset existing keys or conversations to bypass it. There is no plaintext fallback. GIFs are imported from Files. Voice notes require deliberate microphone use; saving audio to Files creates an external copy. Local blocking and saved safety concerns do not revoke household membership or automatically email support.
+
+Shared Calendar marks days with plans. Select a day or use Today/Agenda to see details. Add to my Calendar opens Apple's editor: nothing is saved until you confirm. Later household edits do not update that personal copy.
+
+For access or sync failures, check iCloud availability, the Apple Account that accepted the invitation and household membership. Retry with connectivity. Do not delete your household, reset keys or share passwords as a troubleshooting step. Send the app version/build and the visible error to support, without private messages or locations.
 
 ## Permissions
 
@@ -48,7 +60,7 @@ Eligible Watch activities can record a HealthKit workout when permission is avai
 
 Completed wellbeing moments can contribute to personal points, family points, streaks and positive awards
 
-Live walk sharing is off by default and requires both a master opt-in and a separate choice for each walk. Stop Sharing is available without stopping the workout. A stale location stops displaying after three minutes and is cleared when an app next detects that it has expired
+The corrected candidate disables workout-associated household live walk sharing. Private workout recording remains available. Optional Together location sharing is separate and requires your own consent; existing legacy cloud data is handled by the separately confirmed preservation-first migration described in the Privacy Policy.
 
 The on-device AI coach is optional and does not send prompts to a server
 
