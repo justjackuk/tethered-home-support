@@ -1,6 +1,20 @@
 # Tethered Home Privacy Policy
 
-Last updated 2 October 2026
+Last updated 12 October 2026
+
+## Version 2.0.5 household features — pending public release
+
+These disclosures describe the next-release candidate, not a claim that an earlier installed version offers these features or that Apple has approved it.
+
+Household Chat uses OpenMLS end-to-end encryption for message content and selected photo, GIF and voice-note attachments before CloudKit delivery. Authorised household membership and trusted-device approval are required. There is no plaintext fallback. Cloud delivery still requires routing, member/device identifiers and delivery metadata; end-to-end encryption does not conceal all metadata. GIFs are imported from files selected by the user, not searched through a third-party GIF provider.
+
+The microphone is used only when you choose to record a voice note. Notes are not automatically transcribed or sent to an external AI service. Explicitly saving audio to Files or exporting selected message text creates a separate copy outside protected Chat storage. A locally saved safety concern is not automatically delivered to support. Blocking on a device is separate from revoking household membership; contact support for concerns needing developer attention.
+
+Tethered Together shares your current or last-known location, optional saved Place, movement/activity, reliable speed and battery status with accepted household members only after you enable your own sharing. Sharing is off by default. Motion and background updates depend on Apple permissions and system scheduling. Updates may be delayed or unavailable: this is not guaranteed real-time tracking or an emergency service. You can pause or stop sharing. Private workout routes are not shared through Together. Revocation stops future access but cannot recall copies another member has already seen or saved.
+
+Shared Calendar stores household event details and member associations in the household share. Personal Apple Calendar remains separate. Add to my Calendar opens Apple's editor for review and explicit saving; that copy is not continuously synchronised with later household edits.
+
+Chat, Calendar and Together data are stored on devices and in the household CloudKit share as applicable. Removing local data, deleting a shared item and revoking membership are distinct actions. Offline devices and independently exported copies may retain information; deleting the app does not by itself delete cloud records. Do not treat an unsend action as recall of independently saved copies. Existing health-data and legacy-version limitations below remain applicable.
 
 Tethered Home is designed to keep household information under the control of the people using the app
 
