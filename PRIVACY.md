@@ -1,10 +1,10 @@
 # Tethered Home Privacy Policy
 
-Last updated 12 October 2026
+Last updated 22 October 2026
 
-## Version 2.0.5 household features — pending public release
+## Household features and version availability
 
-These disclosures describe the next-release candidate, not a claim that an earlier installed version offers these features or that Apple has approved it.
+Feature availability depends on the version installed. The additional iPhone wellbeing and Watch-start behaviour below describes version 2.0.8, currently a TestFlight/review candidate, not a claim of public release or Apple approval.
 
 Household Chat uses OpenMLS end-to-end encryption for message content and selected photo, GIF and voice-note attachments before CloudKit delivery. Authorised household membership and trusted-device approval are required. There is no plaintext fallback. Cloud delivery still requires routing, member/device identifiers and delivery metadata; end-to-end encryption does not conceal all metadata. GIFs are imported from files selected by the user, not searched through a third-party GIF provider.
 
@@ -45,7 +45,7 @@ Life admin subscription records, including recorded costs, billing frequencies a
 Tethered Home requests access only when a feature needs it
 
 - Calendar and Reminders access supports plans and reminders
-- Health access supports an explicitly logged water quantity and fitness workouts deliberately started and timed on Apple Watch. Outdoor dog walks can include a workout route when authorised
+- Apple Health is optional, set up during onboarding and managed afterwards in Settings. When enabled, newly logged water and completed eligible timed iPhone workouts or mindful sessions can be saved only for data types you permit through Apple. Imported or historical records are not automatically written back or awarded points again. Eligible Watch workouts are deliberately started and may require their own Health permissions; authorised outdoor walks can include a private route. iPhone timing does not estimate heart rate, calories or a route. New private session and hydration receipts have complete file protection and backup exclusion and are not included in household CloudKit sharing. Editing or undoing a linked water receipt applies only to this app's own Health sample when permitted.
 - Location access supports local animal-walk weather checks and optional private dog-walk route recording
 - Apple Music access supports authorised music suggestions and playback
 - Notifications provide selected household and routine reminders
@@ -75,7 +75,7 @@ The corrected beta candidate disables household live walk-location sharing becau
 
 Names and photos attached to completed dog walks remain in local app storage on that device and are not placed in CloudKit. A user may explicitly export a summary and optional photo using the system share sheet. Raw GPS coordinates are not included in that export
 
-Hydration entries and hydration targets stay on the device and are not included in household CloudKit sync. Checking off a fitness item on iPhone does not create a workout; workouts are recorded only after the user deliberately starts and times an eligible activity on Apple Watch
+Hydration entries, targets and new timed iPhone session history stay on the device and are not included in household CloudKit sync. Checking off an ordinary routine does not create a Health workout. Completing an eligible timed iPhone session can save the permitted sample when the optional Apple Health connection is enabled. A deliberate Start moment can use an installed paired Watch according to the preference in Settings. Supported workouts can launch the Watch app; quiet moments use a live reachable Watch or remain on iPhone. This sends activity/session coordination data between your paired devices, not a public tracking link. A start request does not enable household location sharing or send your personal Health history to household members. Health data is not used for advertising, marketing or third-party analytics.
 
 Profile pictures are cropped and compressed on the device before being stored with household data. Other selected photos, including dog-walk memory photos and ingredient photos, remain local unless the user explicitly exports them with the system share sheet
 
@@ -111,8 +111,9 @@ Users can stop live walk sharing at any time, remove local app data, leave a sha
 
 The household owner controls the shared CloudKit record and invited participants through iCloud sharing
 
-Reset This Device removes local Tethered Home information and private document copies from that device. Delete All Tethered Home Data clears the shared household payload and local Tethered Home data when the reset reaches participating devices. Original files imported from elsewhere are not deleted. Deleting the app does not automatically remove records retained in iCloud or cancel an active Apple subscription
+Reset This Device clears the local settings and copied documents identified by its confirmation. Retained protected Chat history, Shared Calendar, Together and private wellbeing history are not erased by that action. Private wellbeing history has a separate clear control in Fitness & wellbeing; it does not remove existing Health samples or reward points. Original imported files remain unchanged. A confirmed shared-household data clear is separate and may reach participating devices later. Deleting the app does not automatically remove records retained in iCloud, independently exported copies or cancel an active Apple subscription
 
 ## Contact
 
 For privacy questions or support, email byteandtide@outlook.com
+
