@@ -20,9 +20,9 @@ Their profile is added to the household after the shared household is accepted
 
 An accepted household invitation provides shared-household access while membership remains valid. It does not create an Apple subscription for the invited person. Apple subscription Family Sharing is separate; Restore Purchases checks applicable StoreKit entitlements.
 
-## Version 2.0.5 — pending public release
+## Version 2.0.8 — TestFlight/review candidate
 
-The candidate adds Shopping, Home, Together, Chat and Calendar navigation. Choose your opening destination in Settings. Availability in an installed older version differs.
+The candidate refines Home, Together, Chat, Calendar and Shopping navigation. Quick Add is near the top of Home. Open Fitness & wellbeing from its heading or Start a moment. Choose your opening destination in Settings. Availability in an installed older version differs.
 
 Together opens the household map. Each person must enable their own location sharing and grant the permissions they choose. Pause or stop sharing in Together. Stale or unavailable information is not a live safety guarantee. Motion and background updates depend on system permissions; do not use this as an emergency service.
 
@@ -36,7 +36,7 @@ For access or sync failures, check iCloud availability, the Apple Account that a
 
 Calendar and Reminders access lets Tethered Home read relevant plans and reminders and write events when you ask it to
 
-Health access is optional. iPhone can save the amount of water the user explicitly logs. Eligible fitness workouts are recorded only when deliberately started and timed on Apple Watch; an authorised outdoor dog walk can also save its route in Apple Health
+Apple Health is optional, set up once during onboarding and managed afterwards in Settings > Apple Health. Newly logged water and eligible completed timed iPhone workouts/mindful minutes can be saved only for the data types you permit. Ordinary routine check-offs do not create Health workouts. Watch workouts remain deliberately started; an authorised outdoor walk can save a private route.
 
 Apple Music access is optional and is used for music rediscovery and playback controls
 
@@ -56,9 +56,11 @@ Confirm both devices use the same Apple account or that the invited person has a
 
 Wellbeing and fitness progress remain personal and are not included in household CloudKit sync or sent as family notifications
 
-Eligible Watch activities can record a HealthKit workout when permission is available
+Choose an activity and tap Start moment once. Settings > Watch sync > Automatically use Apple Watch controls the preferred device. Supported workouts can open on an installed paired Watch. Quiet moments use Watch when reachable or start on iPhone. If a Watch start is uncertain, check Watch before confirming that no moment is running and choosing Continue on iPhone. The recovery action does not stop a Watch recording.
 
-Completed wellbeing moments can contribute to personal points, family points, streaks and positive awards
+On iPhone, pause/resume or Finish & save the timed moment. Set a weekly days goal and review existing points, streaks and awards. Health sensor measurements are not invented by the iPhone timer. Eligible Watch activities can record a HealthKit workout when permission is available.
+
+Completed wellbeing moments use the existing points, streaks and awards system. A weekly day goal counts distinct days with completed iPhone moments; changing the target does not grant extra points. Viewing imported Health workouts does not award completion points again.
 
 The corrected candidate disables workout-associated household live walk sharing. Private workout recording remains available. Optional Together location sharing is separate and requires your own consent; existing legacy cloud data is handled by the separately confirmed preservation-first migration described in the Privacy Policy.
 
@@ -89,3 +91,4 @@ For support, open an issue in this repository without including private health d
 Include the app version, build number, device model, operating-system version and the steps that led to the problem
 
 Read the public Privacy Policy at https://github.com/justjackuk/tethered-home-support/blob/main/PRIVACY.md
+
