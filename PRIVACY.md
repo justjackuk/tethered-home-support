@@ -53,6 +53,7 @@ Tethered Home requests access only when a feature needs it
 - Photos access is limited to pictures the user selects for household profiles or a local walk memory
 - iCloud and CloudKit provide private sync and invited household sharing
 - Widgets display a limited household summary from the app’s shared on-device container
+- In version 2.0.8, choosing Together in a Home Screen widget can display a short-lived Apple Maps image of recently shared locations from accepted household members. This image is location data: it is marked privacy-sensitive, excluded from device backup and gated to the current household. The app stops presenting it when it expires or access is no longer valid. Raw coordinates are not added to the widget cache, and map images are not sent to the paired Watch or TV. iOS controls widget refresh and may retain an older rendered view between updates; this is not live tracking. Tapping opens the interactive map in the app. Lock Screen accessory widgets do not display this map.
 - Live Activities display the status of a workout the user has deliberately started on Apple Watch
 
 Access can be declined or changed in Apple Settings
